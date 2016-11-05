@@ -1,6 +1,16 @@
 // Import a couple modules for testing.
-import { sayHelloTo } from './modules/mod1';
+import {sayHelloTo} from './modules/mod1';
 import addArray from './modules/mod2';
+
+
+import debug from 'debug';
+const log = debug('app:log');
+
+// enable the logger
+debug.enable('*');
+log('Logging is enabled!');
+
+
 
 // Run some functions from our imported modules.
 const result1 = sayHelloTo('Jason');
