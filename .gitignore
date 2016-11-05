@@ -1,3 +1,10 @@
 node_modules
 build/**
 !build/index.html
+-ORIGINAL-main.min.js
+.idea/encodings.xml
+.idea/learn-rollup.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
