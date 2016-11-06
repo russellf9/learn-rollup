@@ -4,12 +4,20 @@ import addArray from './modules/mod2';
 
 
 import debug from 'debug';
+
+
 const log = debug('app:log');
 
-// enable the logger
-debug.enable('*');
-log('Logging is enabled!');
+// The logger should only be disabled if we’re not in production.
+if (ENV !== 'production') {
 
+// enable the logger
+    debug.enable('*');
+    log('Logging is enabled!');
+
+} else {
+    debug.disable();
+}
 
 
 // Run some functions from our imported modules.
