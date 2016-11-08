@@ -17,7 +17,13 @@ if (ENV !== 'production') {
 
 // enable the logger
     debug.enable('*');
-    log('Logging is enabled!');
+    log('mm Oh Yes Logging is enabled!');
+
+    // Enable LiveReload
+    document.write(
+        '<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>'
+    );
 
 } else {
     debug.disable();
